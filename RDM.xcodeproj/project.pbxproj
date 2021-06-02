@@ -53,6 +53,7 @@
 		35C9D3B6212C04DD00D652F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CC4996212C54AF00704BD7 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
 		35E3DC1621281E3E00B4D66A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		74FBEEEB2668199D00971EDC /* RDM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RDM.entitlements; sourceTree = "<group>"; };
 		8F13DECB24FDCE790049A2DF /* export.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
 		8F48E61624FC761C0073123B /* RestoreSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreSettings.swift; sourceTree = "<group>"; };
 		8F5AA6C1250607A400E7DAEA /* SheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		350B4EE41FB05B2E0001A095 = {
 			isa = PBXGroup;
 			children = (
+				74FBEEEB2668199D00971EDC /* RDM.entitlements */,
 				358D5659212DEDEC00F9E9BF /* README.md */,
 				35C9D3B3212C04DD00D652F7 /* Main.storyboard */,
 				35C9D3B1212C04DD00D652F7 /* Assets.xcassets */,
@@ -372,16 +374,19 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = RDM.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82JM6AK5VV;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = etc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 2.5.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.alkalay.RDM;
+				PRODUCT_BUNDLE_IDENTIFIER = io.80386.RDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = src/bridging.h;
@@ -398,15 +403,18 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = RDM.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82JM6AK5VV;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = etc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 2.5.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.alkalay.RDM;
+				PRODUCT_BUNDLE_IDENTIFIER = io.80386.RDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = src/bridging.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
